@@ -9,9 +9,9 @@ const app = (0, express_1.default)();
 const PORT = 3000;
 app.use(express_1.default.json());
 app.get('/', (req, res) => {
-    res.send('Welcome to gl-classification backend applicaiton.');
+    res.send('Welcome to classificatio.');
 });
-app.use('/v1', index_1.default);
+app.use('/api/v1', index_1.default);
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
